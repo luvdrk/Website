@@ -1,22 +1,31 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap');
+
 /* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
 }
 
 /* Header Styles */
 header {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    box-shadow: 0 2px 15px rgba(0,0,0,0.03);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -30,28 +39,24 @@ header {
 
 nav {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
     align-items: center;
 }
 
 .logo-text {
     font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    letter-spacing: 1px;
-    margin-right: 60px;
-    position: relative;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #000000;
     padding-bottom: 4px;
-}
-
-.logo-text::after {
-    content: '';
-    position: absolute;
-    width: 30%;
-    height: 2px;
-    background: linear-gradient(90deg, #FF6B6B, transparent);
-    bottom: 0;
-    left: 0;
+    text-transform: uppercase;
+    margin-right: 30px;
 }
 
 .nav-links {
@@ -60,18 +65,19 @@ nav {
 }
 
 .nav-links li {
-    margin-right: 40px;
+    margin: 0 15px;
     position: relative;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #444;
+    color: #000000;
     font-weight: 500;
     font-size: 15px;
     transition: color 0.3s ease;
     position: relative;
     padding: 5px 0;
+    letter-spacing: 0.5px;
 }
 
 .nav-links a::after {
@@ -79,14 +85,14 @@ nav {
     position: absolute;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #FF6B6B, #FF8E53);
+    background: #000000;
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #FF6B6B;
+    color: #444444;
 }
 
 .nav-links a:hover::after {
@@ -106,7 +112,7 @@ nav {
     position: absolute;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(78,205,196,0.03) 0%, rgba(78,205,196,0) 70%);
+    background: radial-gradient(circle, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0) 70%);
     top: -250px;
     left: 50%;
     transform: translateX(-50%);
@@ -121,10 +127,10 @@ nav {
 }
 
 .main-logo-text {
-    font-size: 42px;
-    font-weight: bold;
-    color: #333;
-    letter-spacing: 3px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 4px;
     margin-right: 15px;
     position: relative;
 }
@@ -134,7 +140,7 @@ nav {
     position: absolute;
     width: 40%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #FF6B6B, transparent);
+    background: linear-gradient(90deg, transparent, #000000, transparent);
     bottom: -8px;
     left: 30%;
     opacity: 0.6;
@@ -212,29 +218,29 @@ nav {
     width: 180px;
     margin: 0 auto;
     text-align: center;
-    background: linear-gradient(90deg, #FF6B6B, #FF8E53);
+    background: #000000;
     color: white;
     padding: 12px 0;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 14px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:hover {
-    background: linear-gradient(90deg, #FF8E53, #FF6B6B);
+    background: #333333;
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(255, 107, 107, 0.4);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Trending Section */
 .trending-section {
     padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: #f5f5f5;
     position: relative;
     overflow: hidden;
 }
@@ -244,7 +250,7 @@ nav {
     position: absolute;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(255,107,107,0.05) 0%, rgba(255,142,83,0) 70%);
+    background: radial-gradient(circle, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0) 70%);
     top: -100px;
     left: -100px;
     border-radius: 50%;
@@ -255,21 +261,23 @@ nav {
     position: absolute;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(78,205,196,0.05) 0%, rgba(78,205,196,0) 70%);
+    background: radial-gradient(circle, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0) 70%);
     bottom: -100px;
     right: -100px;
     border-radius: 50%;
 }
 
 .section-title {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 40px;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
     position: relative;
     display: inline-block;
     left: 50%;
     transform: translateX(-50%);
+    color: #000000;
+    letter-spacing: 1px;
 }
 
 .section-title::after {
@@ -277,7 +285,7 @@ nav {
     position: absolute;
     width: 50px;
     height: 3px;
-    background: linear-gradient(90deg, #FF6B6B, #FF8E53);
+    background: #000000;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -307,7 +315,7 @@ nav {
 
 .trend-img {
     height: 220px;
-    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    background: #f0f0f0;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -341,17 +349,19 @@ nav {
     text-align: center;
     font-size: 18px;
     margin-bottom: 5px;
-    font-weight: 600;
-    color: #333;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 0.5px;
 }
 
 .trend-subtitle {
     text-align: center;
     font-size: 14px;
-    color: #777;
+    color: #555555;
     position: relative;
     width: fit-content;
     margin: 0 auto;
+    font-weight: 400;
 }
 
 .trend-subtitle::after {
@@ -361,7 +371,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #FF6B6B, #FF8E53);
+    background: #000000;
     transition: width 0.3s ease;
 }
 
@@ -371,7 +381,7 @@ nav {
 
 /* Footer */
 footer {
-    background-color: #2d3436;
+    background-color: #000000;
     color: white;
     padding: 50px 0 30px;
     margin-top: 60px;
@@ -384,7 +394,7 @@ footer::before {
     position: absolute;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(255,107,107,0.05) 0%, rgba(45,52,54,0) 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 70%);
     top: -150px;
     right: -150px;
     border-radius: 50%;
@@ -405,10 +415,11 @@ footer::before {
 
 .footer-logo-text {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     margin-right: 15px;
     position: relative;
     padding-bottom: 5px;
+    letter-spacing: 1.5px;
 }
 
 .footer-logo-text::after {
@@ -416,7 +427,7 @@ footer::before {
     position: absolute;
     width: 30%;
     height: 2px;
-    background: linear-gradient(90deg, #FF6B6B, transparent);
+    background: linear-gradient(90deg, #ffffff, transparent);
     bottom: 0;
     left: 0;
 }
@@ -447,6 +458,8 @@ footer::before {
     font-size: 20px;
     position: relative;
     display: inline-block;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .socials h3::after {
@@ -454,7 +467,7 @@ footer::before {
     position: absolute;
     width: 40%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #FF6B6B);
+    background: linear-gradient(90deg, transparent, #ffffff);
     bottom: -8px;
     right: 0;
 }
@@ -473,7 +486,7 @@ footer::before {
 .social-icon {
     width: 36px;
     height: 36px;
-    background: linear-gradient(145deg, #FF6B6B, #FF8E53);
+    background: #ffffff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -483,7 +496,7 @@ footer::before {
 }
 
 .social-icon i {
-    color: white;
+    color: #000000;
     font-size: 16px;
 }
 
@@ -503,7 +516,7 @@ footer::before {
     left: 0;
     width: 70%;
     height: 100%;
-    background: linear-gradient(90deg, #FF6B6B, #FF8E53);
+    background: #ffffff;
     border-radius: 3px;
 }
 
@@ -542,14 +555,14 @@ footer::before {
     .socials h3::after {
         left: 50%;
         transform: translateX(-50%);
-        background: linear-gradient(90deg, #FF6B6B, transparent, #FF6B6B);
+        background: linear-gradient(90deg, transparent, #ffffff, transparent);
     }
     
     .footer-logo-text::after {
         left: 50%;
         transform: translateX(-50%);
         width: 40%;
-        background: linear-gradient(90deg, transparent, #FF6B6B, transparent);
+        background: linear-gradient(90deg, transparent, #ffffff, transparent);
     }
     
     .footer-logo {
@@ -560,6 +573,20 @@ footer::before {
         margin-right: 0;
         margin-bottom: 15px;
         padding-bottom: 8px;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .logo-text {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -573,22 +600,8 @@ footer::before {
         width: 90%;
     }
     
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .logo-text {
-        margin-bottom: 15px;
-    }
-    
-    .nav-links {
-        flex-wrap: wrap;
-    }
-    
     .nav-links li {
         margin-bottom: 10px;
-        margin-right: 20px;
     }
     
     .main-logo-content {
@@ -598,9 +611,10 @@ footer::before {
     .main-logo-text {
         margin-right: 0;
         margin-bottom: 20px;
+        font-size: 36px;
     }
     
     .section-title {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
