@@ -1,12 +1,12 @@
-/* Import Fonts - Updated with modern options */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+/* Import Outfit Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 /* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 body {
@@ -16,8 +16,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
 }
 
 /* Header Styles */
@@ -50,8 +50,8 @@ nav {
 
 .logo-text {
     font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 3px;
+    font-weight: 600;
+    letter-spacing: 2px;
     color: #222;
     padding-bottom: 2px;
     text-transform: uppercase;
@@ -115,9 +115,9 @@ nav {
 
 .main-logo-text {
     font-size: 52px;
-    font-weight: 500;
+    font-weight: 600;
     color: #222;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
     margin-right: 15px;
     position: relative;
 }
@@ -204,7 +204,7 @@ nav {
     background: transparent;
     color: #222;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -229,11 +229,12 @@ nav {
 .section-title {
     font-size: 42px;
     margin-bottom: 70px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     color: #222;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     position: relative;
+    margin-top: -20px;
 }
 
 .section-title::after {
@@ -312,9 +313,9 @@ nav {
 .trend-title {
     font-size: 24px;
     margin-bottom: 14px;
-    font-weight: 500;
+    font-weight: 600;
     color: #222;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     position: relative;
     padding-bottom: 14px;
 }
@@ -334,7 +335,8 @@ nav {
     color: #666;
     line-height: 1.6;
     margin-bottom: 20px;
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: 0.3px;
 }
 
 /* Footer */
@@ -361,10 +363,10 @@ footer {
 
 .footer-logo-text {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     margin-right: 15px;
     position: relative;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -391,8 +393,8 @@ footer {
     font-size: 20px;
     position: relative;
     display: inline-block;
-    letter-spacing: 4px;
-    font-weight: 500;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 .social-link {
@@ -431,7 +433,7 @@ footer {
     color: rgba(255,255,255,0.8);
     font-size: 14px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 400;
     transition: color 0.3s ease;
 }
 
@@ -524,3 +526,921 @@ footer {
         font-size: 32px;
     }
 }
+
+/* About Us Page Styles */ 
+.about-section {
+    padding: 100px 0;
+    background-color: #f5f5f5;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-title-container {
+    margin-bottom: 40px;
+}
+
+.about-title {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.about-info {
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about-mission-title,
+.about-vision-title {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.about-mission-text,
+.about-vision-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 3px solid #222;
+}
+
+.about-image {
+    flex: 0 0 45%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    position: relative;
+}
+
+.about-image img {
+    max-width: 85%;
+    max-height: 85%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-image {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        margin-top: 30px;
+    }
+}
+
+/* Brand Page Styles */
+.browse-section {
+    padding: 60px 0 100px;
+    background-color: #f5f5f5;
+}
+
+/* Brand Sections */
+.brand-section {
+    margin-bottom: 60px;
+}
+
+.brand-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+/* Product Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    padding: 18px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.product-rating {
+    color: #f8d64e;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .brand-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+
+/* Brand Page Style */ 
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #fafafa;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-items {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #222;
+            padding-bottom: 2px;
+            text-transform: uppercase;
+            margin-right: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.2s ease;
+            position: relative;
+            padding: 5px 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #222;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #555;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: #000;
+        }
+
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* Browse Section */
+        .browse-section {
+            padding: 60px 0 100px;
+            background-color: #f5f5f5;
+        }
+
+        .section-title {
+            font-size: 42px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            text-align: center;
+            color: #222;
+            letter-spacing: 3px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: #222;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .brand-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .brand-title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #222;
+            letter-spacing: 1px;
+        }
+
+        /* Product Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            padding: 18px;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 17px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .product-rating {
+            color: #f8d64e;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 50px 0 30px;
+            margin-top: 60px;
+            position: relative;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo-text {
+            font-size: 16px;
+            font-weight: 600;
+            margin-right: 15px;
+            position: relative;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .footer-logo-image {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .footer-logo-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .socials {
+            text-align: right;
+        }
+
+        .socials h3 {
+            margin-bottom: 25px;
+            font-size: 20px;
+            position: relative;
+            display: inline-block;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateX(-8px);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .social-link:hover .social-icon {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .social-icon i {
+            color: white;
+            font-size: 16px;
+        }
+
+        .social-text {
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .social-link:hover .social-text {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .products-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .brand-title {
+                font-size: 24px;
+            }
+
+            .filter-buttons {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+        }
+
+/* Brand meaning text */
+.brand-meaning {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Category Filter Buttons */
+/* Enhanced Brand Filter Buttons */
+.brand-filter-buttons {
+    display: flex;
+    gap: 12px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.category-button {
+    padding: 8px 20px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.category-button:hover {
+    background: #f5f5f5;
+    border-color: #bbb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Active state styling - more prominent */
+#dbtk-all:target ~ .brands-wrapper .brand-section.dbtk .brand-filter-buttons .category-button[href="#dbtk-all"],
+#dbtk-shirts:target ~ .brands-wrapper .brand-section.dbtk .brand-filter-buttons .category-button[href="#dbtk-shirts"],
+#dbtk-jackets:target ~ .brands-wrapper .brand-section.dbtk .brand-filter-buttons .category-button[href="#dbtk-jackets"],
+#dbtk-hoodies:target ~ .brands-wrapper .brand-section.dbtk .brand-filter-buttons .category-button[href="#dbtk-hoodies"],
+#dbtk-pants:target ~ .brands-wrapper .brand-section.dbtk .brand-filter-buttons .category-button[href="#dbtk-pants"],
+#revel-all:target ~ .brands-wrapper .brand-section.revel .brand-filter-buttons .category-button[href="#revel-all"],
+#revel-shirts:target ~ .brands-wrapper .brand-section.revel .brand-filter-buttons .category-button[href="#revel-shirts"],
+#revel-jackets:target ~ .brands-wrapper .brand-section.revel .brand-filter-buttons .category-button[href="#revel-jackets"],
+#revel-hoodies:target ~ .brands-wrapper .brand-section.revel .brand-filter-buttons .category-button[href="#revel-hoodies"],
+#revel-pants:target ~ .brands-wrapper .brand-section.revel .brand-filter-buttons .category-button[href="#revel-pants"],
+#realjokes-all:target ~ .brands-wrapper .brand-section.realjokes .brand-filter-buttons .category-button[href="#realjokes-all"],
+#realjokes-shirts:target ~ .brands-wrapper .brand-section.realjokes .brand-filter-buttons .category-button[href="#realjokes-shirts"],
+#realjokes-jackets:target ~ .brands-wrapper .brand-section.realjokes .brand-filter-buttons .category-button[href="#realjokes-jackets"],
+#realjokes-hoodies:target ~ .brands-wrapper .brand-section.realjokes .brand-filter-buttons .category-button[href="#realjokes-hoodies"],
+#realjokes-pants:target ~ .brands-wrapper .brand-section.realjokes .brand-filter-buttons .category-button[href="#realjokes-pants"] {
+    background: #222;
+    color: white;
+    border-color: #222;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Default state - show all products initially */
+.product-card {
+    display: block;
+    transition: opacity 0.3s ease, transform 0.4s ease;
+}
+
+/* Improved product filtering with transitions */
+/* Hide irrelevant products */
+#dbtk-shirts:target ~ .brands-wrapper .brand-section.dbtk .product-card:not(.shirts),
+#dbtk-jackets:target ~ .brands-wrapper .brand-section.dbtk .product-card:not(.jackets),
+#dbtk-hoodies:target ~ .brands-wrapper .brand-section.dbtk .product-card:not(.hoodies),
+#dbtk-pants:target ~ .brands-wrapper .brand-section.dbtk .product-card:not(.pants),
+#revel-shirts:target ~ .brands-wrapper .brand-section.revel .product-card:not(.shirts),
+#revel-jackets:target ~ .brands-wrapper .brand-section.revel .product-card:not(.jackets),
+#revel-hoodies:target ~ .brands-wrapper .brand-section.revel .product-card:not(.hoodies),
+#revel-pants:target ~ .brands-wrapper .brand-section.revel .product-card:not(.pants),
+#realjokes-shirts:target ~ .brands-wrapper .brand-section.realjokes .product-card:not(.shirts),
+#realjokes-jackets:target ~ .brands-wrapper .brand-section.realjokes .product-card:not(.jackets),
+#realjokes-hoodies:target ~ .brands-wrapper .brand-section.realjokes .product-card:not(.hoodies),
+#realjokes-pants:target ~ .brands-wrapper .brand-section.realjokes .product-card:not(.pants) {
+    display: none;
+}
+
+/* Filter indicator for users */
+.brand-section {
+    position: relative;
+}
+
+.brand-section::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #f0f0f0;
+    border-radius: 2px;
+}
+
+#dbtk-shirts:target ~ .brands-wrapper .brand-section.dbtk::before,
+#dbtk-jackets:target ~ .brands-wrapper .brand-section.dbtk::before,
+#dbtk-hoodies:target ~ .brands-wrapper .brand-section.dbtk::before,
+#dbtk-pants:target ~ .brands-wrapper .brand-section.dbtk::before,
+#revel-shirts:target ~ .brands-wrapper .brand-section.revel::before,
+#revel-jackets:target ~ .brands-wrapper .brand-section.revel::before,
+#revel-hoodies:target ~ .brands-wrapper .brand-section.revel::before,
+#revel-pants:target ~ .brands-wrapper .brand-section.revel::before,
+#realjokes-shirts:target ~ .brands-wrapper .brand-section.realjokes::before,
+#realjokes-jackets:target ~ .brands-wrapper .brand-section.realjokes::before,
+#realjokes-hoodies:target ~ .brands-wrapper .brand-section.realjokes::before,
+#realjokes-pants:target ~ .brands-wrapper .brand-section.realjokes::before {
+    background: #222;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .brand-filter-buttons {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .category-button {
+        padding: 6px 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .category-button {
+        padding: 5px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Product Filtering */
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: block; /* Default display all products */
+}
+
+/* Hide all products when a filter is active */
+#dbtk-shirts:target ~ .brands-wrapper .brand-section.dbtk .product-card,
+#dbtk-jackets:target ~ .brands-wrapper .brand-section.dbtk .product-card,
+#dbtk-hoodies:target ~ .brands-wrapper .brand-section.dbtk .product-card,
+#dbtk-pants:target ~ .brands-wrapper .brand-section.dbtk .product-card,
+#revel-shirts:target ~ .brands-wrapper .brand-section.revel .product-card,
+#revel-jackets:target ~ .brands-wrapper .brand-section.revel .product-card,
+#revel-hoodies:target ~ .brands-wrapper .brand-section.revel .product-card,
+#revel-pants:target ~ .brands-wrapper .brand-section.revel .product-card,
+#realjokes-shirts:target ~ .brands-wrapper .brand-section.realjokes .product-card,
+#realjokes-jackets:target ~ .brands-wrapper .brand-section.realjokes .product-card,
+#realjokes-hoodies:target ~ .brands-wrapper .brand-section.realjokes .product-card,
+#realjokes-pants:target ~ .brands-wrapper .brand-section.realjokes .product-card {
+    display: none;
+}
+
+/* Show only the filtered products */
+#dbtk-shirts:target ~ .brands-wrapper .brand-section.dbtk .product-card.shirts,
+#dbtk-jackets:target ~ .brands-wrapper .brand-section.dbtk .product-card.jackets,
+#dbtk-hoodies:target ~ .brands-wrapper .brand-section.dbtk .product-card.hoodies,
+#dbtk-pants:target ~ .brands-wrapper .brand-section.dbtk .product-card.pants,
+#revel-shirts:target ~ .brands-wrapper .brand-section.revel .product-card.shirts,
+#revel-jackets:target ~ .brands-wrapper .brand-section.revel .product-card.jackets,
+#revel-hoodies:target ~ .brands-wrapper .brand-section.revel .product-card.hoodies,
+#revel-pants:target ~ .brands-wrapper .brand-section.revel .product-card.pants,
+#realjokes-shirts:target ~ .brands-wrapper .brand-section.realjokes .product-card.shirts,
+#realjokes-jackets:target ~ .brands-wrapper .brand-section.realjokes .product-card.jackets,
+#realjokes-hoodies:target ~ .brands-wrapper .brand-section.realjokes .product-card.hoodies,
+#realjokes-pants:target ~ .brands-wrapper .brand-section.realjokes .product-card.pants {
+    display: block;
+}
+
+/* Responsive styling for filters */
+@media (max-width: 992px) {
+    .brand-filter-buttons {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-filter-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-filter-buttons {
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .category-button {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+}
+
+/* Services Page Style */ 
+
+/* Services Page Styles with Targeted Positioning */
+.services-section {
+    padding: 60px 0 100px;
+    background-color: #f5f5f5;
+}
+
+.simple-services-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 20px;
+}
+
+.simple-service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.simple-service-item:nth-child(2),
+.simple-service-item:nth-child(3) {
+    margin-top: -60px;
+}
+
+.simple-service-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #222;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.simple-service-image {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 
+        0 15px 30px rgba(0,0,0,0.15),
+        0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+}
+
+.simple-service-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0.1) 100%);
+    pointer-events: none;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.simple-service-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+}
+
+/* Brand Overlay Text */
+.brand-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.brand-overlay-text {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+/* Enhanced hover effects */
+.simple-service-item:hover .simple-service-image {
+    box-shadow: 
+        0 20px 40px rgba(0,0,0,0.2),
+        0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.simple-service-item:hover .simple-service-image img {
+    transform: scale(1.05);
+}
+
+.simple-service-item:hover .brand-overlay {
+    opacity: 1;
+}
+
+.simple-service-item:hover .brand-overlay-text {
+    transform: translateY(0);
+}
+
+.simple-service-desc {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    text-align: center;
+    max-width: 650px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .simple-service-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .simple-service-image {
+        max-width: 90%;
+        height: 300px;
+    }
+    
+    .brand-overlay-text {
+        font-size: 40px;
+    }
+    
+    .simple-service-desc {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .simple-service-title {
+        font-size: 22px;
+    }
+    
+    .simple-service-image {
+        max-width: 100%;
+        height: 220px;
+    }
+    
+    .brand-overlay-text {
+        font-size: 32px;
+    }
+    
+    .simple-services-container {
+        gap: 60px;
+    }
+}
+
